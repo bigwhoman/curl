@@ -1,0 +1,6 @@
+Requesting URL: https://dummyjson.com/posts/add
+Method: POST
+JSON: {"title": "World"; "userId": 5}
+thread 'main' panicked at src/main.rs:84:58:
+Invalid JSON: Error("expected `,` or `}`", line: 1, column: 18)
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

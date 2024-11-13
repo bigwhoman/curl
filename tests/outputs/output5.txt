@@ -1,0 +1,3 @@
+Requesting URL: https://[...1]
+Method: GET
+Error: The URL contains an invalid IPv6 address.

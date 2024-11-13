@@ -1,0 +1,9 @@
+Requesting URL: https://jsonplaceholder.typicode.com/posts
+Method: POST
+Data: userId=1&title=Hello World
+Response body (JSON with sorted keys):
+{
+  "id": 101,
+  "title": "Hello World",
+  "userId": "1"
+}

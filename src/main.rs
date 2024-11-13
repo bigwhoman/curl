@@ -6,7 +6,15 @@ use clap::{Arg, Command};
 fn main() {
     let matches = get_arguments();
     if let Some(website) = matches.get_one::<String>("Host") {
-        request(website);
+        // TODO : 
+        /*
+        *   Handle Valid Base Protocol (HTTP -- HTTPS)
+        *   Invalid IP Address
+        */
+        match request(website) {
+            Ok(()) => (),
+            Err(e) => println!("{e}")
+        };
     }
 }
 

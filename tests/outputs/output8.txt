@@ -1,0 +1,3 @@
+Requesting URL: https://example.rs
+Method: GET
+Error: Unable to connect to the server. Perhaps the network is offline or the server hostname cannot be resolved.

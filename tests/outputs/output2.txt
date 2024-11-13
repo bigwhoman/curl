@@ -1,0 +1,3 @@
+Requesting URL: www.eecg.toronto.edu
+Method: GET
+Error: The URL does not have a valid base protocol.

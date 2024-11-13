@@ -1,0 +1,1 @@
+cargo run -- "https://jsonplaceholder.typicode.com/posts" -d "userId=1&title=Hello World" -X POST

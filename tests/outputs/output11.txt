@@ -1,0 +1,9 @@
+Requesting URL: https://dummyjson.com/posts/add
+Method: POST
+JSON: {"title": "World", "userId": 5}
+Response body (JSON with sorted keys):
+{
+  "id": 252,
+  "title": "World",
+  "userId": 5
+}
