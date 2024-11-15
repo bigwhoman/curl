@@ -199,8 +199,10 @@ name = "curl"
 version = "0.1.0"
 dependencies = [
  "clap",
+ "hyper",
  "reqwest",
  "tokio",
+ "url",
 ]
 
 [[package]]
