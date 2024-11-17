@@ -61,7 +61,6 @@ fn main() {
             Ok(()) => (),
             Err(e) => {
                 print!("Error: ");
-                println!("{}", e);
                 let message = e
                     .source()
                     .map(|src| src.to_string())
@@ -93,7 +92,7 @@ async fn request(
     raw_data : Option<String>,
     is_json : bool
 ) -> Result<(), Box<dyn std::error::Error>> {
-    println!("Requsting URL: {}", server);
+    println!("Requesting URL: {}", server);
     println!("Method: {}", method);
     let response;
     if method == "GET" {
@@ -120,9 +119,9 @@ async fn request(
     if serde_json::from_str::<serde_json::Value>(&body).is_ok() {
         let parsed: Value = serde_json::from_str(&body).unwrap();
         let pretty = serde_json::to_string_pretty(&parsed);
-        println!("Response body (JSON with sorted keys):\n{}", pretty.unwrap());
+        print!("Response body (JSON with sorted keys):\n{}\n", pretty.unwrap());
     } else {
-        println!("Response body:\n{}", body);
+        print!("Response body:\n{}", body);
     }
 
     Ok(())
